@@ -1,5 +1,4 @@
 let uaRate = 1;
-let rubRate = 0.36;
 let plRate = 6.31;
 let eurRate = 30.30;
 let usaRate = 26.23;
@@ -12,8 +11,6 @@ do {
   let currencySign;
   if (userChooseCurrency.toUpperCase() === "UAN") {
     currencySign = uaRate;
-  } else if (userChooseCurrency.toUpperCase() === "RUB") {
-    currencySign = rubRate;
   } else if (userChooseCurrency.toUpperCase() === "PLN") {
     currencySign = plRate;
   } else if (userChooseCurrency.toUpperCase() === "EUR") {
@@ -36,9 +33,6 @@ do {
 
   if (userCurrencyConvert.toUpperCase() === "UAN") {
     exchangedAmount = (currencyAmount * currencySign) / uaRate;
-  } 
-    else if (userCurrencyConvert.toUpperCase() === "RUB") {
-    exchangedAmount = (currencyAmount * currencySign) / rubRate;
   } 
     else if (userCurrencyConvert.toUpperCase() === "EUR") {
     exchangedAmount = (currencyAmount * currencySign) / eurRate;
